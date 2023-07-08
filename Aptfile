@@ -1,0 +1,24 @@
+i  aptitude - terminal-based package manager
+i  base-files - Debian base system miscellaneous files
+i  base-passwd - Debian base system master password and group files
+i  bash - GNU Bourne Again SHell
+i  bsdutils - basic utilities from 4.4BSD-Lite
+i  dash - POSIX-compliant shell
+i  diffutils - File comparison utilities
+i  findutils - utilities for finding files--find, xargs
+i  gnupg - GNU privacy guard - a free PGP replacement
+i  grep - GNU grep, egrep and fgrep
+i  gzip - GNU compression utilities
+i  hostname - utility to set/show the host name or domain name
+i  init - metapackage ensuring an init system is installed
+i  libdebconfclient0 - Debian Configuration Management System (C-implementation library)
+i  login - system login tools
+i  mongodb-org - MongoDB open source document-oriented database system (metapackage)
+i  ncurses-base - basic terminal type definitions
+i  ncurses-bin - terminal-related programs and man pages
+i  neovim - heavily refactored vim fork
+i  sysvinit-utils - System-V-like utilities
+i  ubuntu-minimal - Minimal core of Ubuntu
+i  ubuntu-standard - The Ubuntu standard system
+i  ubuntu-wsl - Ubuntu on Windows tools - Windows Subsystem for Linux integration
+i  zsh - shell with lots of features
