@@ -29,6 +29,19 @@ zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
 
+# Search Through History Based on Already Entered Prompt Ket Bindings
+#
+# For example, this will allow us to type `git` into the command line
+# and we can use the up or down arrow key to search through previous
+# commands starting with `git`.
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search # Up
+bindkey "${terminfo[kcud1]}" down-line-or-beginning-search # Down
+
+
 PROMPT='%F{green}%n@%F{cyan}%m:%~ %f> '
 
 
