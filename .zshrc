@@ -33,4 +33,3 @@ PROMPT='%F{green}%n@%F{cyan}%m:%~ %f> '
 
 
 echo "$(<~/src/dotfiles/hello.txt)"
-echo -e "\033[0;36mWelcome \033[0;33mto \033[0;31mMark's \033[0;35mZSH\033[0m!"
