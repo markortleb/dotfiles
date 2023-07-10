@@ -23,6 +23,10 @@ alias grep='grep --color=auto"'
 alias zrc='$EDITOR $HOME/.zshrc'
 
 
+source ~/.machine_specific_profile 2>/dev/null
+
+
+
 ########################################################################################################################
 # Key Bindings #########################################################################################################
 ########################################################################################################################
@@ -40,7 +44,7 @@ zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
 
-# Search Through History Based on Already Entered Prompt Ket Bindings
+# Search Through History Based on Already Entlsered Prompt Ket Bindings
 #
 # For example, this will allow us to type `git` into the command line
 # and we can use the up or down arrow key to search through previous
@@ -112,9 +116,8 @@ compinit
 _comp_options+=(globdots)  # this will include hidden files
 
 
-# Setup prompts
-PROMPT='%F{green}%n@%F{cyan}%m:%~ %f> '
-RPROMPT='%* %?'
+eval "$(starship init zsh)"
+
 
 # Print welcome letter on new shell
 echo "$(<~/src/dotfiles/hello.txt)"
