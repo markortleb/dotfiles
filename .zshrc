@@ -122,9 +122,11 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)  # this will include hidden files
 
-
+# This is for the cool Starship prompt
 eval "$(starship init zsh)"
 
+# This has to happen last
+source ~/src/dotfiles/third_party/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 # Print welcome letter on new shell
 echo "$(<~/src/dotfiles/hello.txt)"
