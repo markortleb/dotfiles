@@ -12,6 +12,7 @@
 export EDITOR=nvim
 export VISUAL=nvim
 export KEYTIMEOUT=1
+export NVM_DIR="$HOME/.nvm"
 
 
 ########################################################################################################################
@@ -63,6 +64,9 @@ bindkey "${terminfo[kcud1]}" down-line-or-beginning-search # Down
 # Other Stuff ##########################################################################################################
 ########################################################################################################################
 
+
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Keep 10000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=10000
