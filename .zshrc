@@ -26,6 +26,37 @@ alias zrc='$EDITOR $HOME/.zshrc'
 source ~/.machine_specific_profile 2>/dev/null
 
 
+########################################################################################################################
+# Key Bindings #########################################################################################################
+########################################################################################################################
+
+# Use vi keybinds
+bindkey -v
+
+
+# Multiline Command Editor Key Binding
+#
+# You can use this when in command mode by pressing ESC and then v.
+# To save the command, write and exit the file as you would in vim.
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+
+
+# Search Through History Based on Already Entered Prompt Ket Bindings
+#
+# For example, this will allow us to type `git` into the command line
+# and we can use the up or down arrow key to search through previous
+# commands starting with `git`.
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
+bindkey "^[[A" up-line-or-beginning-search # Up
+bindkey "^[[B" down-line-or-beginning-search # Down
+bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search # Up
+bindkey "${terminfo[kcud1]}" down-line-or-beginning-search # Down
 
 
 ########################################################################################################################
@@ -89,44 +120,13 @@ _comp_options+=(globdots)  # this will include hidden files
 # This is for the cool Starship prompt
 eval "$(starship init zsh)"
 
-# This has to happen last
-source ~/src/dotfiles/third_party/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-
-########################################################################################################################
-# Key Bindings #########################################################################################################
-########################################################################################################################
-
-# Use vi keybinds
-bindkey -v
-
-
-# Multiline Command Editor Key Binding
-#
-# You can use this when in command mode by pressing ESC and then v.
-# To save the command, write and exit the file as you would in vim.
-autoload -z edit-command-line
-zle -N edit-command-line
-bindkey -M vicmd v edit-command-line
-
-
-# Search Through History Based on Already Entered Prompt Ket Bindings
-#
-# For example, this will allow us to type `git` into the command line
-# and we can use the up or down arrow key to search through previous
-# commands starting with `git`.
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    bindkey "^[[A" up-line-or-beginning-search # Up
-    bindkey "^[[B" down-line-or-beginning-search # Down
-else
-    echo "here"
-    bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search # Up
-    bindkey "${terminfo[kcud1]}" down-line-or-beginning-search # Down
-fi
 
 # Print welcome letter on new shell
 echo "$(<~/src/dotfiles/hello.txt)"
+
+
+# This has to happen last
+source ~/src/dotfiles/third_party/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
+
+
