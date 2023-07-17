@@ -59,6 +59,7 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search # Up
 bindkey "${terminfo[kcud1]}" down-line-or-beginning-search # Down
 
+bindkey -v '^?' backward-delete-char
 
 ########################################################################################################################
 # Other Stuff ##########################################################################################################
