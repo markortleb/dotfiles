@@ -1,2 +1,2 @@
 require("mark.remap")
-print("hello mark")
+require("mark.set")
