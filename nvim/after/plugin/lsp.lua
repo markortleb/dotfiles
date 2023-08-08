@@ -5,8 +5,28 @@ lsp.preset("recommended")
 lsp.ensure_installed({
   'tsserver',
   'rust_analyzer',
-  'sumneko_lua',
-  'rust_analyzer'
+  'lua_ls',
+  'html',
+  'pylsp',
+  'bashls',
+  'ltex',
+  'angularls',
+  'awk_ls',
+  'cssmodules_ls',
+  'texlab',
+  'perlnavigator',
+  'cmake',
+  'cssls',
+  'docker_compose_language_service',
+  'dockerls',
+  'emmet_language_server',
+  'jsonls',
+  'svelte',
+  'volar',
+  'vimls',
+  'yamlls',
+  'pylsp',
+  'html',
 })
 
 -- Fix Undefined global 'vim'
