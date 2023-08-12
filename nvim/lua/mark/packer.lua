@@ -38,6 +38,8 @@ return require('packer').startup(function(use)
       }
   }
 
+  use('christoomey/vim-tmux-navigator')
+
   use('tpope/vim-dadbod')
   use('kristijanhusak/vim-dadbod-ui')
   use('kristijanhusak/vim-dadbod-completion')

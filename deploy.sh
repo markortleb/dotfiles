@@ -5,6 +5,7 @@ dotfiles=(
   ".bash_profile"
   ".profile"
   ".zshrc"
+  ".tmux.conf"
 )
 
 mkdir -p "$HOME/.backup_dotfiles"
