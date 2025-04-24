@@ -125,11 +125,11 @@ eval "$(starship init zsh)"
 
 
 # Print welcome letter on new shell
-echo "$(<~/src/dotfiles/hello.txt)"
+echo "$(<~/src/dotfiles/zsh/resources/hello.txt)"
 
 
 # This has to happen last
-source ~/src/dotfiles/third_party/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+source ~/src/dotfiles/zsh/third_party/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 
 
