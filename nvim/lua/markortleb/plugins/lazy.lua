@@ -1,10 +1,11 @@
 require("lazy").setup({
-  -- Plugin manager dependencies
+  { "windwp/nvim-autopairs" },
+
   { "tpope/vim-dadbod" },
   { "kristijanhusak/vim-dadbod-ui" },
   { "kristijanhusak/vim-dadbod-completion" },
+
   { import = "markortleb.plugins.treesitter" },
   { import = "markortleb.plugins.sqlui" }
-  -- Add more plugins here as you go
 })
 
