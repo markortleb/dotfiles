@@ -1,11 +1,10 @@
 require("lazy").setup({
-  { "windwp/nvim-autopairs" },
+  { import = "markortleb.plugins.autopairs" },
+  { import = "markortleb.plugins.treesitter" },
+  { import = "markortleb.plugins.sqlui" },
 
   { "tpope/vim-dadbod" },
   { "kristijanhusak/vim-dadbod-ui" },
-  { "kristijanhusak/vim-dadbod-completion" },
-
-  { import = "markortleb.plugins.treesitter" },
-  { import = "markortleb.plugins.sqlui" }
+  { "kristijanhusak/vim-dadbod-completion" }, 
 })
 
