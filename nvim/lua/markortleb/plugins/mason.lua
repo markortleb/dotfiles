@@ -1,5 +1,3 @@
--- ~/.config/nvim/lua/markortleb/plugins/mason.lua
-
 return {
   "williamboman/mason.nvim",
   config = function()
@@ -15,4 +13,3 @@ return {
     })
   end,
 }
-

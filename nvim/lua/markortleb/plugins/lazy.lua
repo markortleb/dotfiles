@@ -13,6 +13,8 @@ require("lazy").setup({
   -- Code Completion
   { import = "markortleb.plugins.cmp" },
 
+   -- File Explorer
+  { import = "markortleb.plugins.neotree"},
 
   { import = "markortleb.plugins.autopairs" },
   { import = "markortleb.plugins.treesitter" },
