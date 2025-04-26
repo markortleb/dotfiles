@@ -11,6 +11,7 @@ function install_mac() {
 
   echo "🔁 Installing Neovim with clipboard support..."
   brew install neovim
+
   echo "✅ Neovim with clipboard support installed!"
 }
 
@@ -38,21 +39,7 @@ function install_wsl() {
 
   echo "✅ win32yank installed at ~/.local/bin/win32yank.exe"
   echo "🔧 Now add this to your Neovim config:"
-  cat <<'EOF'
 
-vim.g.clipboard = {
-  name = "win32yank-wsl",
-  copy = {
-    ["+"] = "win32yank.exe -i --crlf",
-    ["*"] = "win32yank.exe -i --crlf"
-  },
-  paste = {
-    ["+"] = "win32yank.exe -o --lf",
-    ["*"] = "win32yank.exe -o --lf"
-  },
-  cache_enabled = 0,
-}
-EOF
 }
 
 # Detect OS
