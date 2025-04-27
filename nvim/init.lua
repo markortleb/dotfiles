@@ -9,9 +9,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 
-require("markortleb.settings")
 require("markortleb.keymaps")
 require("markortleb.lazy")
 require("markortleb.plugins.core.treesitter")
-
-
+require("markortleb.settings")
+require("markortleb.utils")
