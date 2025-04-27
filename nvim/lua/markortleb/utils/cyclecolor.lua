@@ -5,7 +5,18 @@ local colors = {
   "tokyonight",
   "nightfox",
   "lackluster",
-  "everforest"
+  "everforest",
+  "kanagawa",
+  "rose-pine",
+  "onedark",
+  "vscode",
+  "dracula",
+  "nord",
+  "synthweave",
+  "darkvoid",
+  "one_monokai",
+  "darcula-dark",
+  "bamboo"
 }
 
 local index = 1
