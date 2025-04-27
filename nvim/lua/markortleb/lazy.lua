@@ -12,7 +12,8 @@ require("lazy").setup({
   -- { import = "markortleb.plugins.motion" },
   { import = "markortleb.plugins.tools" },
   { import = "markortleb.plugins.completion" },
-  { import = "markortleb.plugins.colorschemes"}
+  { import = "markortleb.plugins.colorschemes"},
+  { import = "markortleb.plugins.dashboards"}
  
 })
 
