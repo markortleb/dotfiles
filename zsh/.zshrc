@@ -128,7 +128,7 @@ eval "$(starship init zsh)"
 
 
 # Print welcome letter on new shell
-echo "$(<~/src/dotfiles/zsh/resources/hello.txt)"
+echo "$(<~/src/dotfiles/zsh/resources/hello2.txt)"
 
 
 # This has to happen last
