@@ -11,9 +11,18 @@ vim.keymap.set("n", "<leader>n", ":Neotree toggle left<CR>", { desc = "Open Neo 
 vim.keymap.set("n", "<leader>cd", ":Oil -new-dir<CR>", { noremap = true, silent = true, desc = "Create a new directory in Oil" })
 
 -- Dashboard Mappings
-vim.keymap.set("n", "<leader>h", ":Dashboard<CR>", { desc = "Create a new directory in Oil" })
+vim.keymap.set("n", "<leader>d", ":Dashboard<CR>", { desc = "Create a new directory in Oil" })
 
 -- Fun Mappings
 vim.keymap.set("n", "<leader>cc", ":CycleColors<CR>", { desc = "Loop through color schemes." })
 
+-- Relative Line Number toggle
+vim.keymap.set(
+  "n",
+  "<leader>rn", 
+  function()
+    vim.opt.relativenumber = not vim.opt.relativenumber:get()
+  end,
+  { desc = "Toggle relative line numbers" }
+)
 
