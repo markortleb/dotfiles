@@ -26,3 +26,6 @@ vim.keymap.set(
   { desc = "Toggle relative line numbers" }
 )
 
+-- Editing mappings
+
+vim.keymap.set("n", "<leader>r", 'viw"_dP', { noremap = true, silent = true, desc = "Replace a word with yanked text in clipboard, without overwriting the clipboard." })

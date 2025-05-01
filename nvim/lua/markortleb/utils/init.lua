@@ -1,5 +1,9 @@
 local M = {}
 
-M.cyclecolor = require("markortleb.utils.cyclecolor")
+-- Load modules
+M.colorhelper = require("markortleb.utils.colorhelper.colorhelper")
+
+-- Initialize
+M.colorhelper.init()
 
 return M
