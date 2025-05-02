@@ -9,6 +9,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 
+-- Setting Path
+local envhelper = require("nvim.lua.markortleb.utils.envhelper.envhelper")
+envhelper.set_path()
+
 require("markortleb.keymaps")
 require("markortleb.lazy")
 require("markortleb.plugins.core.treesitter")
