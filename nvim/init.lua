@@ -12,8 +12,13 @@ vim.opt.rtp:prepend(lazypath)
 local pathhelper = require("markortleb.utils.pathhelper.pathhelper")
 pathhelper.set_path()
 
+-- Rocks Helper
+local rockshelper = require("markortleb.utils.rockshelper.rockshelper")
+rockshelper.init()
+
 require("markortleb.keymaps")
 require("markortleb.lazy")
 require("markortleb.plugins.core.treesitter")
 require("markortleb.settings")
 require("markortleb.utils")
+
