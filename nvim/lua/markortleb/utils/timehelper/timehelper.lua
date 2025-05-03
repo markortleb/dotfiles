@@ -26,6 +26,17 @@ function M.init()
     vim.api.nvim_create_user_command("GetUTCTime", function()
         M.get_current_time_by_tz("UTC")
     end, {})
+
+
+    vim.api.nvim_create_user_command("GetDenverTime", function()
+        M.get_current_time_by_tz("America/Denver")
+    end, {})
+
+
+    vim.api.nvim_create_user_command("GetNewYorkTime", function()
+        M.get_current_time_by_tz("America/New_York")
+    end, {})
+
 end
 
 return M

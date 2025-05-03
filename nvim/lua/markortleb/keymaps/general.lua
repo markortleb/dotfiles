@@ -1,7 +1,4 @@
 
--- Set leader before mapping anything
-vim.g.mapleader = " "
-
 -- Mappings
 vim.keymap.set("n", "<leader>db", ":DBUI<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>e", ":Oil<CR>", { desc = "Open Oil file explorer." })

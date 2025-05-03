@@ -1,3 +1,8 @@
+-- Set Leader
+require("markortleb.keymaps.leader")
+
+
+-- Load Lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -16,8 +21,9 @@ pathhelper.set_path()
 local rockshelper = require("markortleb.utils.rockshelper.rockshelper")
 rockshelper.init()
 
-require("markortleb.keymaps")
+
 require("markortleb.lazy")
+require("markortleb.keymaps")
 require("markortleb.plugins.core.treesitter")
 require("markortleb.settings")
 require("markortleb.utils")
