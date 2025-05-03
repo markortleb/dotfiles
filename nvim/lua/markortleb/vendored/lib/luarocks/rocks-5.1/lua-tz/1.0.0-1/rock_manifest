@@ -1,0 +1,9 @@
+rock_manifest = {
+   doc = {
+      ["README.md"] = "e6bb61b53a6fc83ce00f7901a692b2fc"
+   },
+   lib = {
+      ["tz.so"] = "bff721fc0fbe293bb7557a6b549cf18b"
+   },
+   ["lua-tz-1.0.0-1.rockspec"] = "c5f2a85290646239da38c4b7e437b502"
+}
