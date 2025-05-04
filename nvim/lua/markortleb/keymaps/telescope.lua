@@ -42,3 +42,26 @@ vim.keymap.set(
   end,
   { desc = "Telescope help tags." }
 )
+
+
+
+-- Telescope Find Files starting from Home Directory 
+vim.keymap.set(
+  "n",
+  "<leader>fm",
+  function()
+    require("telescope.builtin").find_files({ cwd = vim.env.HOME })
+  end,
+  { desc = "Telescope find files, starting from home dir." }
+)
+
+
+-- Telescope Find Files starting from Home Directory 
+vim.keymap.set(
+  "n",
+  "<leader>fr",
+  function()
+    require("telescope.builtin").oldfiles()
+  end,
+  { desc = "Telescope see recent files." }
+)

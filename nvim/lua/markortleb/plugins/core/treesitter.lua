@@ -28,6 +28,8 @@ return {
         "julia",
         "kotlin",
         "lua",
+        "markdown",
+        "markdown_inline",
         "nginx",
         "perl",
         "php",
