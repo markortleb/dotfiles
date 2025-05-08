@@ -1,9 +1,5 @@
 require("lazy").setup({
   
-  -- Dadbod SQL Completer
-    { "tpope/vim-dadbod" },
-    { "kristijanhusak/vim-dadbod-ui" },
-    { "kristijanhusak/vim-dadbod-completion" }, 
     
     { import = "markortleb.plugins.core" },
     { import = "markortleb.plugins.lsp" }, 
@@ -14,7 +10,8 @@ require("lazy").setup({
     { import = "markortleb.plugins.completion" },
     { import = "markortleb.plugins.colorschemes"},
     { import = "markortleb.plugins.dashboards"},
-    { import = "markortleb.plugins.ui" }
+    { import = "markortleb.plugins.ui" },
+    { import = "markortleb.plugins.dadbod" }
  
 })
 

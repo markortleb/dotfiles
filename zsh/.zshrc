@@ -20,7 +20,7 @@ export KEYTIMEOUT=1
 
 alias vim='nvim'
 alias ll='ls -lah'
-alias grep='grep --color=auto"'
+alias grep='grep --color=auto'
 alias zrc='$EDITOR $HOME/.zshrc'
 
 
