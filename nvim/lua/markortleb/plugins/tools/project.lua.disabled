@@ -1,0 +1,16 @@
+return {
+  "ahmedkhalf/project.nvim",
+  event = "VeryLazy",
+  config = function()
+    require("project_nvim").setup({
+      -- Recommended settings
+      detection_methods = { "lsp", "pattern" },
+      patterns = { ".git", "Makefile", "package.json", "pyproject.toml" },
+      silent_chdir = true,
+      show_hidden = false,
+    })
+
+    -- Optional: Integrate with Telescope
+    require("telescope").load_extension("projects")
+  end,
+}

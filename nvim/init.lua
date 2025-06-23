@@ -21,6 +21,10 @@ pathhelper.set_path()
 local rockshelper = require("markortleb.utils.rockshelper.rockshelper")
 rockshelper.init()
 
+-- Working Dir Helper
+local workingdirhelper = require("markortleb.utils.workingdirhelper.workingdirhelper")
+workingdirhelper.init()
+
 
 require("markortleb.lazy")
 require("markortleb.keymaps")
