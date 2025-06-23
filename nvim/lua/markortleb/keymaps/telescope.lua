@@ -3,7 +3,7 @@ vim.keymap.set(
   "n",
   "<leader>ff",
   function()
-    require("telescope.builtin").find_files()
+    require("telescope.builtin").find_files({ cwd = vim.g.work_dir, prompt_title = "Find file in work_dir."})
   end,
   { desc = "Telescope find files." }
 )
