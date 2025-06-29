@@ -21,15 +21,18 @@ local function save_state(state_path, state)
     end
 end
 
+
 local function apply_colorscheme(colorscheme_name)
-    local ok, err = pcall(vim.cmd.colorscheme, colorscheme_name)
+    local ok, err = pcall(function()
+        vim.cmd("colorscheme " .. colorscheme_name)
+    end)
+
     if ok then
-      vim.notify("Colorscheme is now " .. colorscheme_name)
+        vim.notify("Colorscheme is now " .. colorscheme_name)
     else
-      vim.notify("Failed to load colorscheme: " .. colorscheme_name)
+        vim.notify("Failed to load colorscheme: " .. colorscheme_name)
     end
 end
-
 
 local function get_current_index(state_path)
     local file = io.open(state_path, "r")
