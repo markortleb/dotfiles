@@ -1,1 +1,5 @@
 let mapleader = " "
+
+
+set relativenumber
+nnoremap <leader>rn :set relativenumber!<CR>
