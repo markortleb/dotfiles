@@ -14,7 +14,7 @@ vim.keymap.set(
   "n",
   "<leader>fg",
   function()
-    require("telescope.builtin").live_grep()
+    require("telescope.builtin").live_grep({ cwd = vim.g.work_dir, prompt_title = "Grep in work_dir."})
   end,
   { desc = "Telescope live grep." }
 )
