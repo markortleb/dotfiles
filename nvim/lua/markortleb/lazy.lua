@@ -1,8 +1,7 @@
 require("lazy").setup({
-  
-    
+
     { import = "markortleb.plugins.core" },
-    { import = "markortleb.plugins.lsp" }, 
+    { import = "markortleb.plugins.lsp" },
     { import = "markortleb.plugins.editing" },
     { import = "markortleb.plugins.filetree"},
     -- { import = "markortleb.plugins.motion" },
@@ -12,6 +11,6 @@ require("lazy").setup({
     { import = "markortleb.plugins.dashboards"},
     { import = "markortleb.plugins.ui" },
     { import = "markortleb.plugins.dadbod" }
- 
+
 })
 
