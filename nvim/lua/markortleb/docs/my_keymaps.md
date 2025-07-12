@@ -70,3 +70,20 @@ Here are my Neovim keymaps. Assume all of these are for Normal Mode unless speci
 ### Terminal Mode
 
 - `<Esc>` -> Exit terminal mode. *Normally you would have to press* `<C-\><C-n>`
+
+
+## CodeCompanion
+
+- `<leader>a` -> Toggle CodeCompanion Chat.
+- `<C-a>` -> CodeCompanion Actions.
+
+### Visual Mode
+
+- `ga` -> CodeCompanionChat Add
+
+
+## Comment
+
+### Visual Mode
+
+- `gc` -> Comment the code in the visual selection.
