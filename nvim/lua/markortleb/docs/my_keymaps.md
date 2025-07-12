@@ -15,8 +15,8 @@ Here are my Neovim keymaps. Assume all of these are for Normal Mode unless speci
 
 ## Harpoon
 
-- `<leader>a` -> Add buffer to Harpoon List.
-- `<leader>h` -> Open Harpoon Menu.
+- `<leader>ha` -> Add buffer to Harpoon List.
+- `<leader>hm` -> Open Harpoon Menu.
 - `<leader>1` -> Switch to stored Harpoon buffer 1.
 - `<leader>2` -> Switch to stored Harpoon buffer 2.
 - `<leader>3` -> Switch to stored Harpoon buffer 3.
@@ -87,3 +87,4 @@ Here are my Neovim keymaps. Assume all of these are for Normal Mode unless speci
 ### Visual Mode
 
 - `gc` -> Comment the code in the visual selection.
+
