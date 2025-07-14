@@ -39,6 +39,7 @@ return {
         "scala",
         "sql",
         "tsv",
+        "tsx",
         "typescript",
         "vim",
         "vimdoc",
