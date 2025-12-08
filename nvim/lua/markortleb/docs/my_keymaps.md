@@ -12,6 +12,9 @@ Here are my Neovim keymaps. Assume all of these are for Normal Mode unless speci
 - `<leader>rn` -> Toggle relative line numbers.
 - `<leader>ww` -> Set the current working directory (a customer vim.g.work_dir var), to whichever folder your buffer is currently in.
 
+## Oil
+
+- `g.` -> Show hidden files in Oil.
 
 ## Harpoon
 
@@ -45,6 +48,12 @@ Here are my Neovim keymaps. Assume all of these are for Normal Mode unless speci
 - `<leader>wl` -> Resize window to the right.
 - `<leader>wj` -> Resize window downward.
 - `<leader>wk` -> Resize window upward.
+
+- `<C-w>h` -> Switch to split on the left.
+- `<C-w>l` -> Switch to split on the right.
+- `<C-w>j` -> Switch to split below.
+- `<C-w>k` -> Switch to split above.
+
 
 
 ## Telescope

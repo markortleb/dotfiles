@@ -33,3 +33,9 @@ end, { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>wv', ':vsplit<CR><C-w>l', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>w-', ':split<CR><C-w>j', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>wc', ':close<CR>', { noremap = true, silent = true })
+
+-- Easier split navigation with Ctrl + arrow keys
+vim.api.nvim_set_keymap('n', '<leader>h', '<C-w>h', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>j', '<C-w>j', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>k', '<C-w>k', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>l', '<C-w>l', { noremap = true })

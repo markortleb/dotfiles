@@ -13,6 +13,9 @@ vim.keymap.set('n', '<leader>t3', function() toggle_term_in_work_dir(3) end, { n
 vim.keymap.set('n', '<leader>t4', function() toggle_term_in_work_dir(4) end, { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>t5', function() toggle_term_in_work_dir(5) end, { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>t6', function() toggle_term_in_work_dir(6) end, { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>t7', function() toggle_term_in_work_dir(7) end, { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>t8', function() toggle_term_in_work_dir(8) end, { noremap = true, silent = true })
+
 
 -- Exit terminal mode using Esc
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { noremap = true })
