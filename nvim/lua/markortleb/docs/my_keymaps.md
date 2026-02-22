@@ -49,10 +49,10 @@ Here are my Neovim keymaps. Assume all of these are for Normal Mode unless speci
 - `<leader>wj` -> Resize window downward.
 - `<leader>wk` -> Resize window upward.
 
-- `<C-w>h` -> Switch to split on the left.
-- `<C-w>l` -> Switch to split on the right.
-- `<C-w>j` -> Switch to split below.
-- `<C-w>k` -> Switch to split above.
+- `<leader>h` -> Switch to split on the left.
+- `<leader>l` -> Switch to split on the right.
+- `<leader>j` -> Switch to split below.
+- `<leader>k` -> Switch to split above.
 
 
 

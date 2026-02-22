@@ -24,7 +24,9 @@ alias grep='grep --color=auto'
 alias zrc='$EDITOR $HOME/.zshrc'
 
 
-source ~/.machine_specific_profile 2>/dev/null
+if [[ -o interactive ]] && [[ -z "${DOTFILES_DISABLE_MACHINE_PROFILE:-}" ]] && [[ -f "$HOME/.machine_specific_profile" ]]; then
+  source "$HOME/.machine_specific_profile"
+fi
 
 
 export PATH="$HOME/.local/bin:$PATH"
@@ -126,13 +128,28 @@ _comp_options+=(globdots)  # this will include hidden files
 # This is for the cool Starship prompt
 eval "$(starship init zsh)"
 
+if [[ -f "$HOME/.dotfiles.env" ]]; then
+  set -a
+  source "$HOME/.dotfiles.env"
+  set +a
+fi
+
+if [[ -z "${DOTFILES_DIR:-}" ]]; then
+  return
+fi
+
+DOTFILES_ZSH_DIR="$DOTFILES_DIR/zsh"
+
 
 # Print welcome letter on new shell
-echo "$(<~/src/dotfiles/zsh/resources/hello2.txt)"
+echo "$(<"$DOTFILES_ZSH_DIR/resources/hello2.txt")"
 
 
 # This has to happen last
-source ~/src/dotfiles/zsh/third_party/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+source "$DOTFILES_ZSH_DIR/third_party/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" 2>/dev/null
 
 
 
+
+# Added by Windsurf
+export PATH="/Users/markortleb/.codeium/windsurf/bin:$PATH"
