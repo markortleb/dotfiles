@@ -1,24 +1,49 @@
-# dotfiles
-A place to store my dotfiles.
+# Dotfiles
+Configuration files for my development environment.
 
+## Prerequisites
 
-## Ubuntu
-* Run `aptitude search '~i!~M' > Aptfile` to get list of packages that are installed on machine.
-* curl -sS https://starship.rs/install.sh | sh
+### Ubuntu
+```bash
+# Get list of installed packages
+aptitude search '~i!~M' > Aptfile
 
+# Install starship prompt
+curl -sS https://starship.rs/install.sh | sh
+```
 
-## Mac
-* Run `brew bundle dump` to get list of installed packages.
-* brew install starship
+### Mac
+```bash
+# Get list of installed packages
+brew bundle dump
 
+# Install starship prompt
+brew install starship
+```
 
+## Components
 
-## tmux
-Get the tmux plugin manager
+### Neovim
+See [nvim/README.md](nvim/README.md) for detailed Neovim configuration documentation.
 
-`git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+### tmux
+1. Install tmux plugin manager:
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
 
-Dont forget to refresh the tmux config.
+2. Refresh tmux config:
+```bash
+tmux source ~/.tmux.conf
+```
 
-`tmux source ~/.tmux.conf`
+## Installation
+```bash
+# Clone the repository
+git clone https://github.com/markortleb/dotfiles.git ~/.dotfiles
+
+# Create symbolic links
+ln -s ~/.dotfiles/nvim ~/.config/nvim
+ln -s ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
+```
 
