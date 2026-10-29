@@ -81,14 +81,9 @@ Here are my Neovim keymaps. Assume all of these are for Normal Mode unless speci
 - `<Esc>` -> Exit terminal mode. *Normally you would have to press* `<C-\><C-n>`
 
 
-## CodeCompanion
+## CodeCompanion (disabled)
 
-- `<leader>a` -> Toggle CodeCompanion Chat.
-- `<C-a>` -> CodeCompanion Actions.
-
-### Visual Mode
-
-- `ga` -> CodeCompanionChat Add
+Disabled for now: `plugins/tools/codecompanion.lua` and `keymaps/codecompanion.lua` are renamed to `.disabled`. Its `<C-a>` mapping clashed with the tmux prefix. Rename them back to re-enable.
 
 
 ## Comment
