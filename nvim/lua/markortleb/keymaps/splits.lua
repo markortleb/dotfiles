@@ -34,8 +34,6 @@ vim.keymap.set('n', '<leader>wv', ':vsplit<CR><C-w>l', { noremap = true, silent 
 vim.keymap.set('n', '<leader>w-', ':split<CR><C-w>j', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>wc', ':close<CR>', { noremap = true, silent = true })
 
--- Easier split navigation with Ctrl + hjkl
-vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true })
+-- Split navigation with Ctrl + hjkl now lives in
+-- plugins/tools/tmux-navigator.lua, so the same keys also cross into tmux
+-- panes at the edge of nvim's windows.

@@ -19,3 +19,6 @@ vim.keymap.set('n', '<leader>t8', function() toggle_term_in_work_dir(8) end, { n
 
 -- Exit terminal mode using Esc
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { noremap = true })
+
+-- Esc is claimed by the Claude Code split (it needs it to interrupt), so Ctrl-q is a reliable way out
+vim.keymap.set('t', '<C-q>', [[<C-\><C-n>]], { noremap = true, desc = "Exit terminal mode" })

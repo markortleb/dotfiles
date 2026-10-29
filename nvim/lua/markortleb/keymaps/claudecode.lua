@@ -1,0 +1,7 @@
+vim.keymap.set({ "n", "t" }, "<leader>jj", "<cmd>ClaudeCode<cr>", { noremap = true, silent = true, desc = "Toggle Claude Code" })
+vim.keymap.set("n", "<leader>jf", "<cmd>ClaudeCodeFocus<cr>", { noremap = true, silent = true, desc = "Focus Claude Code" })
+vim.keymap.set("n", "<leader>jr", "<cmd>ClaudeCode --resume<cr>", { noremap = true, silent = true, desc = "Resume Claude Code session" })
+vim.keymap.set("n", "<leader>jb", "<cmd>ClaudeCodeAdd %<cr>", { noremap = true, silent = true, desc = "Add current buffer to Claude" })
+vim.keymap.set("v", "<leader>js", "<cmd>ClaudeCodeSend<cr>", { noremap = true, silent = true, desc = "Send selection to Claude" })
+vim.keymap.set("n", "<leader>ja", "<cmd>ClaudeCodeDiffAccept<cr>", { noremap = true, silent = true, desc = "Accept Claude diff" })
+vim.keymap.set("n", "<leader>jd", "<cmd>ClaudeCodeDiffDeny<cr>", { noremap = true, silent = true, desc = "Deny Claude diff" })

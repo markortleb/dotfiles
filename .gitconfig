@@ -3,3 +3,5 @@
 	name = Mark Ortleb
 [credential]
 	helper = cache
+[core]
+	editor = vim
