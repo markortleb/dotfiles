@@ -27,8 +27,11 @@ brew install starship
 See [nvim/README.md](nvim/README.md) for detailed Neovim configuration documentation.
 
 ### tmux
-1. Install tmux plugin manager:
+1. Install tmux plugin manager (it must end up at `~/.tmux/plugins/tpm`, not
+   just anywhere in your home dir, because `.tmux.conf` runs it from there):
 ```bash
+make install module=tmux
+# or by hand:
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
