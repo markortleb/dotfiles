@@ -29,7 +29,9 @@ local function send(text)
         return
     end
     vim.fn.system({ "tmux", "load-buffer", "-" }, text)
-    vim.fn.system({ "tmux", "paste-buffer", "-d", "-t", target() })
+    -- -p sends a bracketed paste when the pane's app supports it, so newlines
+    -- in a multi-line selection don't act as Enter and submit the prompt.
+    vim.fn.system({ "tmux", "paste-buffer", "-p", "-d", "-t", target() })
 end
 
 -- Send the absolute path of the current buffer, e.g. to @-mention it.
